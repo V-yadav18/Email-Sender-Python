@@ -8,7 +8,6 @@ def send_email(sendto, subject, text):
         try:
             print("Sending Email to {} (trial {})...".format(sendto, i+1))
             
-            # Using SMTP_SSL for a secure connection
             server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
             
             server.login(username, app_password)
